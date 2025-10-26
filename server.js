@@ -54,7 +54,7 @@ let experiencesData = [
     year: "2022",
     description: "Mempersiapkan segala dokumen serta segala hal administratif terkait kepentingan Universitas. Membantu dalam pendataan administratif yang dimiliki oleh Universitas.",
     // *** UBAH BARIS INI ***
-    image: `${BASE_URL}/LOGO-JGU-BACKGROUND-WHITE.png`,
+    image: "https://web.jgu.ac.id/wp-content/uploads/2023/12/LOGO-JGU-BACKGROUND-WHITE.png",
     link: "https://www.instagram.com/jg_university/"
   },
   {
