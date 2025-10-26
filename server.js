@@ -1,19 +1,11 @@
 const express = require('express');
 const cors = require('cors');
-const path = require('path'); // Tambahkan ini
 const app = express();
 const PORT = 3000;
 
 // Middleware
 app.use(cors());
 app.use(express.json());
-
-// *** TAMBAHKAN INI ***
-// Menyajikan file statis (gambar, css, dll) dari folder 'public'
-app.use(express.static('public'));
-
-// Base URL untuk server Anda (untuk path gambar)
-const BASE_URL = `http://localhost:${PORT}`;
 
 // Data profil
 let profileData = {
@@ -25,8 +17,7 @@ let profileData = {
     intro: "Mahasiswa Aktif Universitas Negeri Jakarta yang saat ini sedang aktif dalam mengikuti organisasi kemahasiswaan. Merupakan lulusan SMK Akuntansi yang memilih melanjutkan perjalanan dalam bidang Teknologi.",
     description: "Sebagai Mahasiswa Informatika di Universitas Negeri Jakarta (UNJ), saya menawarkan kombinasi unik antara ketajaman analitis dan kreativitas desain grafis. Saya tidak hanya menciptakan visual yang menarik, tetapi juga mendesain solusi yang logis, fungsional, dan berorientasi pada pemecahan masalah..."
   },
-  // *** UBAH BARIS INI ***
-  image: `${BASE_URL}/Alvian Nurhakim PP.jpg`,
+  image: "Alvian Nurhakim PP.jpg",
   cta: "AYO KENALAN! SCIENCE IS BAD"
 };
 
@@ -53,8 +44,7 @@ let experiencesData = [
     organization: "Account & Service Finance of Jakarta Global University",
     year: "2022",
     description: "Mempersiapkan segala dokumen serta segala hal administratif terkait kepentingan Universitas. Membantu dalam pendataan administratif yang dimiliki oleh Universitas.",
-    // *** UBAH BARIS INI ***
-    image: "https://web.jgu.ac.id/wp-content/uploads/2023/12/LOGO-JGU-BACKGROUND-WHITE.png",
+    image: "LOGO-JGU-BACKGROUND-WHITE.png",
     link: "https://www.instagram.com/jg_university/"
   },
   {
@@ -63,7 +53,7 @@ let experiencesData = [
     organization: "Finance Division of BEMP Pendidikan Teknik Informatika dan Komputer",
     year: "2024 - Sekarang",
     description: "Koordinator Dana & Sponsorship pada acara Pelatihan Kepemimpinan Mahasiswa Prodi. Staff pada beberapa program kerja BEM Prodi, serta melanjutkan jabatan sebagai Kepala Biro Finance periode 2025/2026.",
-    image: "https://ft.unj.ac.id/ptik/wp-content/uploads/2021/07/LOGO-BEMP-PTIK-150x150.png",
+    image: "LOGO BEMP PTIK (1).png",
     link: "https://www.instagram.com/bempptik_unj/"
   }
 ];
@@ -89,10 +79,6 @@ app.get('/api/profile', (req, res) => {
 // PUT - Update data profil
 app.put('/api/profile', (req, res) => {
   profileData = { ...profileData, ...req.body };
-  // Pastikan path gambar tetap benar setelah update
-  if (req.body.image && !req.body.image.startsWith('http')) {
-    profileData.image = `${BASE_URL}/${req.body.image}`;
-  }
   res.json({
     success: true,
     message: "Profil berhasil diupdate",
@@ -146,9 +132,7 @@ app.get('/api/experiences/:id', (req, res) => {
 app.post('/api/experiences', (req, res) => {
   const newExperience = {
     id: experiencesData.length + 1,
-    ...req.body,
-    // Pastikan path gambar benar saat ditambahkan
-    image: req.body.image.startsWith('http') ? req.body.image : `${BASE_URL}/${req.body.image}`
+    ...req.body
   };
   experiencesData.push(newExperience);
   res.status(201).json({
@@ -163,10 +147,6 @@ app.put('/api/experiences/:id', (req, res) => {
   const index = experiencesData.findIndex(exp => exp.id === parseInt(req.params.id));
   if (index !== -1) {
     experiencesData[index] = { ...experiencesData[index], ...req.body };
-    // Pastikan path gambar benar saat diupdate
-    if (req.body.image && !req.body.image.startsWith('http')) {
-      experiencesData[index].image = `${BASE_URL}/${req.body.image}`;
-    }
     res.json({
       success: true,
       message: "Pengalaman berhasil diupdate",
@@ -219,7 +199,6 @@ app.put('/api/contact', (req, res) => {
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Server berjalan di http://localhost:${PORT}`);
-  console.log(`📡 Menyajikan file statis dari folder 'public'`);
   console.log(`\n📡 API Endpoints:`);
   console.log(`   GET    /api/profile`);
   console.log(`   PUT    /api/profile`);
