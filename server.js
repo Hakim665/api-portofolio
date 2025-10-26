@@ -44,7 +44,7 @@ let experiencesData = [
     organization: "Account & Service Finance of Jakarta Global University",
     year: "2022",
     description: "Mempersiapkan segala dokumen serta segala hal administratif terkait kepentingan Universitas. Membantu dalam pendataan administratif yang dimiliki oleh Universitas.",
-    image: "https://web.jgu.ac.id/wp-content/uploads/2023/12/LOGO-JGU-BACKGROUND-WHITE.png",
+    image: "https://kelaskaryawan.net/wp-content/uploads/2021/12/logo-jgu-1024x433.png",
     link: "#"
   },
   {
