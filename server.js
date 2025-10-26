@@ -44,7 +44,7 @@ let experiencesData = [
     organization: "Account & Service Finance of Jakarta Global University",
     year: "2022",
     description: "Mempersiapkan segala dokumen serta segala hal administratif terkait kepentingan Universitas. Membantu dalam pendataan administratif yang dimiliki oleh Universitas.",
-    image: "https://i.postimg.cc/ZRjCMqPY/jgu-logo.png",
+    image: "https://web.jgu.ac.id/wp-content/uploads/2023/12/LOGO-JGU-BACKGROUND-WHITE.png",
     link: "#"
   },
   {
@@ -53,7 +53,7 @@ let experiencesData = [
     organization: "Finance Division of BEMP Pendidikan Teknik Informatika dan Komputer",
     year: "2024 - Sekarang",
     description: "Koordinator Dana & Sponsorship pada acara Pelatihan Kepemimpinan Mahasiswa Prodi. Staff pada beberapa program kerja BEM Prodi, serta melanjutkan jabatan sebagai Kepala Biro Finance periode 2025/2026.",
-    image: "https://i.postimg.cc/BbVqDWV4/bemps-logo.png",
+    image: "https://ft.unj.ac.id/ptik/wp-content/uploads/2021/07/LOGO-BEMP-PTIK-150x150.png",
     link: "#"
   }
 ];
