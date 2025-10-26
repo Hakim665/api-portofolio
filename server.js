@@ -45,7 +45,7 @@ let experiencesData = [
     year: "2022",
     description: "Mempersiapkan segala dokumen serta segala hal administratif terkait kepentingan Universitas. Membantu dalam pendataan administratif yang dimiliki oleh Universitas.",
     image: "https://kelaskaryawan.net/wp-content/uploads/2021/12/logo-jgu-1024x433.png",
-    link: "#"
+    link: "https://www.instagram.com/jg_university/"
   },
   {
     id: 2,
@@ -54,7 +54,7 @@ let experiencesData = [
     year: "2024 - Sekarang",
     description: "Koordinator Dana & Sponsorship pada acara Pelatihan Kepemimpinan Mahasiswa Prodi. Staff pada beberapa program kerja BEM Prodi, serta melanjutkan jabatan sebagai Kepala Biro Finance periode 2025/2026.",
     image: "https://ft.unj.ac.id/ptik/wp-content/uploads/2021/07/LOGO-BEMP-PTIK-150x150.png",
-    link: "#"
+    link: "https://www.instagram.com/bempptik_unj/"
   }
 ];
 
