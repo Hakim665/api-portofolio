@@ -55,6 +55,15 @@ let experiencesData = [
     description: "Koordinator Dana & Sponsorship pada acara Pelatihan Kepemimpinan Mahasiswa Prodi. Staff pada beberapa program kerja BEM Prodi, serta melanjutkan jabatan sebagai Kepala Biro Finance periode 2025/2026.",
     image: "LOGO BEMP PTIK (1).png",
     link: "https://www.instagram.com/bempptik_unj/"
+  },
+  {
+    id: 3,
+      title: "BANK INDONESIA",
+      organization: "Departemen Pengembangan dan Inovasi Digital",
+      year: "2026 - Sekarang",
+      description: "Developer sekaligus Quality Control untuk produk-produk digital yang diluncurkan oleh Bank Indonesia melalui Departewmen Pengembangan dan Inovasi Digital.",
+      image: "Bank-Indonesia.png",
+      link: "https://www.bi.go.id/id/default.aspx"
   }
 ];
 
