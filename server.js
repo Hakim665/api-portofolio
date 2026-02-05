@@ -14,8 +14,8 @@ let profileData = {
   university: "Universitas Negeri Jakarta",
   major: "Informatika",
   about: {
-    intro: "Mahasiswa Aktif Universitas Negeri Jakarta yang saat ini sedang aktif dalam mengikuti organisasi kemahasiswaan. Merupakan lulusan SMK Akuntansi yang memilih melanjutkan perjalanan dalam bidang Teknologi.",
-    description: "Sebagai Mahasiswa Informatika di Universitas Negeri Jakarta (UNJ), saya menawarkan kombinasi unik antara ketajaman analitis dan kreativitas desain grafis. Saya tidak hanya menciptakan visual yang menarik, tetapi juga mendesain solusi yang logis, fungsional, dan berorientasi pada pemecahan masalah..."
+    intro: "Mahasiswa aktif Universitas Negeri Jakarta yang saat ini terlibat dalam berbagai kegiatan organisasi kemahasiswaan. Latar belakang pendidikan sebagai lulusan SMK Akuntansi membentuk fondasi berpikir analitis yang kuat, yang kemudian dikembangkan lebih lanjut melalui pilihan untuk melanjutkan studi dan pengembangan diri di bidang Teknologi Informasi.",
+    description: "Sebagai mahasiswa Informatika di Universitas Negeri Jakarta (UNJ), saya mengusung pendekatan yang mengintegrasikan ketelitian analitis dengan kreativitas desain grafis. Pendekatan ini memungkinkan saya untuk tidak hanya menghasilkan visual yang menarik secara estetika, tetapi juga merancang solusi digital yang logis, fungsional, dan berorientasi pada pemecahan masalah secara sistematis."
   },
   image: "Alvian Nurhakim PP.jpg",
   cta: "AYO KENALAN! SCIENCE IS BAD"
