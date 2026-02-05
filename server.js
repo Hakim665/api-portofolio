@@ -62,7 +62,7 @@ let experiencesData = [
       organization: "Departemen Pengembangan dan Inovasi Digital",
       year: "2026 - Sekarang",
       description: "Developer sekaligus Quality Control untuk produk-produk digital yang diluncurkan oleh Bank Indonesia melalui Departewmen Pengembangan dan Inovasi Digital.",
-      image: "Bank-Indonesia.png",
+      image: "LOGO BEMP PTIK (1).png",
       link: "https://www.bi.go.id/id/default.aspx"
   }
 ];
