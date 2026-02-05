@@ -10,7 +10,7 @@ app.use(express.json());
 // Data profil
 let profileData = {
   name: "Alvian Nurhakim",
-  title: "Mahasiswa Informatika UNJ | Desainer & Problem Solver",
+  title: "Mahasiswa Informatika UNJ | Software Engineer & Quality Control",
   university: "Universitas Negeri Jakarta",
   major: "Informatika",
   about: {
