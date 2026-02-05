@@ -18,7 +18,7 @@ let profileData = {
     description: "Sebagai mahasiswa Informatika di Universitas Negeri Jakarta (UNJ), saya mengusung pendekatan yang mengintegrasikan ketelitian analitis dengan kreativitas desain grafis. Pendekatan ini memungkinkan saya untuk tidak hanya menghasilkan visual yang menarik secara estetika, tetapi juga merancang solusi digital yang logis, fungsional, dan berorientasi pada pemecahan masalah secara sistematis."
   },
   image: "WhatsApp Image 2026-01-09 at 09.44.00-copy.jpeg",
-  cta: "AYO KENALAN! SCIENCE IS BAD"
+  cta: "AYO KENALAN! SCIENCE IS BAD!!"
 };
 
 // Data skills
